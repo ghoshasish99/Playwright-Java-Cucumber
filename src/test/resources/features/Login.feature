@@ -1,3 +1,4 @@
+@UITest
 Feature: Login
 
   Scenario Outline: E-Shop Application - Create New Account
