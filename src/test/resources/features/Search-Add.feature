@@ -10,4 +10,4 @@ Feature: Search and Add
 
     Examples:
       | EmailID               | Password   | Product                       |
-      | john.doe@cts-shop.com | password-1 | Apple iPhone 6s Plus          |
+      | testuser@cts-shop.com | password-1 | Apple iPhone 6s Plus          |

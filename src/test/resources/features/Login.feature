@@ -1,6 +1,6 @@
 @UITest
 Feature: Login
-
+  
   Scenario Outline: E-Shop Application - Create New Account
     Given User launched eshop login page
     When User create account with "<FirstName>", "<LastName>", "<EmailID>" and "<Password>"

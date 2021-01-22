@@ -8,17 +8,9 @@ import com.microsoft.playwright.Playwright;
 
 public class BrowserInitialize {
 
-	public Browser launchBrowser(String browserName, BrowserType.LaunchOptions launchOptions) {
-
-		BrowserType browserType = null;
-		switch (browserName) {
-		case "chromium":
-			browserType = Playwright.create().chromium();
-		case "firefox":
-			browserType = Playwright.create().firefox();
-		case "webkit":
-			browserType = Playwright.create().webkit();
-		}
+	public Browser launchBrowser(BrowserType.LaunchOptions launchOptions) {
+        Playwright playwright = Playwright.create();
+        BrowserType browserType = playwright.chromium();
 		return browserType.launch(launchOptions);
 	}
 	

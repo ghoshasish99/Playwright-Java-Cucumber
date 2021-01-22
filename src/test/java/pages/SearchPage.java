@@ -6,7 +6,7 @@ import com.microsoft.playwright.Page;
 
 import framework.*;
 
-public class SearchPage {
+public class SearchPage{
 	
 	Page page = FrameworkConfig.page;
 	

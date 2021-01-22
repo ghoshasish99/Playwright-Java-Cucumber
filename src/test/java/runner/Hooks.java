@@ -14,7 +14,6 @@ public class Hooks {
 	@After
 	public void teardown() throws Exception {
 		FrameworkConfig.page.close();
-		FrameworkConfig.playwright.close();
 	}
 
 }

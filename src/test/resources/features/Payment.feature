@@ -13,4 +13,4 @@ Feature: Payment
 
     Examples:
       | EmailID               | Password  | Product               | Title | FirstName | LastName | Line1        | Line2         | City   | State       | Zipcode | CardNumber       | CardName | Year | Month | SecurityCode |
-      | john.doe@cts-shop.com | password-1 | Apple iPhone 6s Plus | Mr    | John     | Doe      | Queen Garden | Victoria Road | London | Lanarkshire  | G50UH    | 1111111111111111 | John    | 2025 | 12    | 232          |
+      | testuser@cts-shop.com | password-1 | Apple iPhone 6s Plus | Mr    | John     | Doe      | Queen Garden | Victoria Road | London | Lanarkshire  | G50UH    | 1111111111111111 | John    | 2025 | 12    | 232          |

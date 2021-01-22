@@ -9,5 +9,5 @@ public class FrameworkConfig {
 	public static Playwright playwright;
 	public static Browser browser;
 	public static Page page;
-
+	
 }

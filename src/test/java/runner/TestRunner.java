@@ -11,7 +11,6 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(strict = true, monochrome = true,
         features = "src/test/resources/features/",
-        tags = "@UITest",
         glue = {"stepdefinitions"},
         plugin = {"junit:target/junitreport.xml","json:target/jsonreport.json"}
         
@@ -23,14 +22,16 @@ public class TestRunner {
     }
     
     
-	/*
-	 * @BeforeClass public static void beforeClass() {
-	 * 
-	 * 
-	 * }
-	 * 
-	 * @AfterClass public static void afterClass() {
-	 * 
-	 * }
-	 */
+	
+	  @BeforeClass 
+	  public static void beforeClass() {
+		 
+	  
+	  }
+	  
+	  @AfterClass 
+	  public static void afterClass() {
+		  
+	  }
+	 
 }

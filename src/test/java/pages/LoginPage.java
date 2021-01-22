@@ -2,12 +2,15 @@ package pages;
 
 import java.util.Date;
 
+
 import com.microsoft.playwright.Page;
 
-import framework.*;
+import framework.FrameworkConfig;
 
-public class LoginPage {
+public class LoginPage{
 	
+	//FrameworkInitialize framework = new FrameworkInitialize();
+	//Page page = framework.InitializePlaywrightPage();
 	Page page = FrameworkConfig.page;
 	
 	public void launch(String url) {
@@ -26,8 +29,7 @@ public class LoginPage {
 		page.fill("//div[normalize-space(.)='Last name *']/div/input[normalize-space(@type)='text']",lname);
 		page.fill("//div[normalize-space(.)='Email *']/div/input[normalize-space(@type)='text']", email);
 		page.fill("input[type='password']", password);
-		page.fill("//div[normalize-space(.)='Confirm password *']/div/input[normalize-space(@type)='text']", password);
-		page.screenshot();
+		page.fill("//div[normalize-space(.)='Confirm password *']/div/input[normalize-space(@type)='password']", password);
 		page.click("text='Create Your E-Shop Account'");
 	}
 	public void loginUnsuccessful() {

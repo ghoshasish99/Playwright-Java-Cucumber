@@ -1,15 +1,14 @@
 package pages;
 
-import java.nio.file.Path;
+
 import java.nio.file.Paths;
-import java.util.Date;
 
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Page.ScreenshotOptions;
 
 import framework.*;
 
-public class PaymentPage {
+public class PaymentPage{
 	
 	Page page = FrameworkConfig.page;
 	

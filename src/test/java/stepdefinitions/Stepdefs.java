@@ -1,11 +1,13 @@
 package stepdefinitions;
 
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.*;
 
 public class Stepdefs {
+	
 
 	LoginPage loginPage = new LoginPage();
 	SearchPage searchPage = new SearchPage();
@@ -13,7 +15,12 @@ public class Stepdefs {
 	
 	@Given("User launched eshop login page")
 	public void user_launched_eshop_login_page() {
+		try {
 		loginPage.launch("http://awswrkshpalb-1570520390.us-west-2.elb.amazonaws.com:3000/cts-shop/login");
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@When("User create account with {string}, {string}, {string} and {string}")
