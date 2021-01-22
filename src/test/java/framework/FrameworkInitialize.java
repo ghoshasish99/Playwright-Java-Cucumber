@@ -12,8 +12,8 @@ public class FrameworkInitialize {
 	public Page InitializePlaywrightPage() {
 
 		BrowserInitialize browserinitialize = new BrowserInitialize();
-		Browser browser = browserinitialize.launchBrowser(new LaunchOptions().withHeadless(false)
-				.withExecutablePath(Paths.get("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe")));
+		Browser browser = browserinitialize.launchBrowser(new LaunchOptions().withHeadless(true));
+				//.withExecutablePath(Paths.get("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe")));
 
 		Browser.NewContextOptions conOptions = new Browser.NewContextOptions();
 		conOptions.locale = "en/US";
