@@ -6,11 +6,11 @@
     <artifactId>playwright</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <dependencies>
-        <dependency>
-            <groupId>com.microsoft.playwright</groupId>
-            <artifactId>playwright</artifactId>
-            <version>0.171.0</version>
-        </dependency>
+	    <dependency>
+	      <groupId>com.microsoft.playwright</groupId>
+	      <artifactId>playwright</artifactId>
+	      <version>1.9.0-alpha-0</version>
+	    </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -76,7 +76,10 @@
                         <include>**/*Runner*.class</include>
                     </includes>
                     <systemPropertyVariables>
-                        <applicationHost>awswrkshpalb-1570520390.us-west-2.elb.amazonaws.com</applicationHost>                        
+                        <executionMode>Local</executionMode>
+                        <browser>Chromium</browser>
+                        <applicationUrl>https://www.saucedemo.com/</applicationUrl>
+                        <remoteUrl></remoteUrl>                        
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

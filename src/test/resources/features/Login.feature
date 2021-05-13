@@ -1,29 +1,21 @@
-@UITest
 Feature: Login
-  
-  Scenario Outline: E-Shop Application - Create New Account
-    Given User launched eshop login page
-    When User create account with "<FirstName>", "<LastName>", "<EmailID>" and "<Password>"
-    Then User account should get created
+    
+
+  Scenario Outline: Login to SwagLabs Application with Correct credentials
+    Given User launched SwagLabs application
+    When User logged in the app using username "<UserName>" and password "<Password>"
+    Then user should be able to log in
 
     Examples:
-      | FirstName | LastName | EmailID           | Password  |
-      | test      | user     | testuser@shop.com | Testing$1 |
+      | UserName           | Password     |
+      | standard_user      | secret_sauce |
 
-  #Scenario Outline: Login to the E-Shop Application
-  #  Given User launched eshop login page in "Web"
-  #  When User logged in eshop using the valid emailid "<EmailID>" and the valid password "<Password>"
-  #  Then user should see a shop home page
-
-  #  Examples:
-  #    | EmailID               | Password  |
-  #    | john.doe@cts-shop.com | password-1 |
-
-  Scenario Outline: Login to the E-Shop Application with Wrong Password
-    Given User launched eshop login page
-    When User logged in eshop using the invalid emailid "<EmailID>" and the invalid password "<Password>"
+  @SmokeTest  
+  Scenario Outline: Login to SwagLabs Application with Wrong credentials
+    Given User launched SwagLabs application
+    When User logged in the app using username "<UserName>" and password "<Password>"
     Then User should not get logged in
 
     Examples:
-      | EmailID                    | Password   |
-      | testuser_negative@shop.com | password-1 |
+      | UserName           | Password     |
+      | locked_out_user    | secret_sauce |
