@@ -8,7 +8,7 @@ Feature: Login
 
     Examples:
       | UserName           | Password     |
-      | standard_user      | secret_sauce |
+      | standard_user      | secret_sauce1 |
 
   @SmokeTest  
   Scenario Outline: Login to SwagLabs Application with Wrong credentials
