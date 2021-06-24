@@ -21,6 +21,7 @@ jobs:
     - name: Execute Tests
       run: mvn clean test
     - name: Upload Test Results
+      if: always()
       uses: actions/upload-artifact@v2.2.2
       with:
         name: Cucumber Reports
