@@ -83,7 +83,7 @@ Now use Cucumber and Page Object Model techniques to pass the Playwright `Page` 
 
 To execute the tests :
 
-All scenarios| `mvn clean test`
+All scenarios| `mvn clean test` 
 ----|----
 Specific tagged scenarios| `mvn clean test -Dcucumber.options="--tags @Smoke"`
 
